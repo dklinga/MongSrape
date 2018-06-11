@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <title>Mongo News Scraper</title>
     <style>
-      body { background-color: #F2F6D0 }
-      /* #wrapper {
+      body { background-image: url(img/paper.jpg);
+        background-position: center;
+        background-size: cover;
+    background-repeat: no-repeat;
+      }
+      #wrapper {
         width: 960px;
         margin-left: auto;
         margin-right: auto;
         padding-top: 5%;
-      } */
+        text-align: center;
+      }
+      
       #articles {
         display: inline-block;
         overflow: auto;
@@ -35,11 +41,20 @@
         font-size: 18px;
       }
     </style>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
   </head>
   <body>
     <div id="wrapper">
-      <h1>Mongo News Scraper</h1>
-      <h2><i>If you can do this...the homework should be no problem.</i></h2>
+        <div class="jumbotron">
+            <h1 class="display-4">Mongo News Scraper!</h1>
+            <p class="lead">Take a look at NY Times news stories and leave comments.</p>
+            <hr class="my-4">
+            <p>Click on article below to leave note</p>
+          </div>
       <div id="articles"></div>
       <div id="notes"></div>
     </div>
